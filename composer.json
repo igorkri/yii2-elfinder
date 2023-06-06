@@ -1,0 +1,31 @@
+{
+    "name": "igorkri/yii2-elfinder",
+    "keywords": ["yii", "elfinder", "filemanager"],
+    "description": "Yii2 ElFinder",
+    "homepage": "https://github.com/igorkri/yii2-elfinder",
+    "type": "yii2-extension",
+    "license": "BSD-3-Clause",
+    "minimum-stability":"stable",
+    "authors": [
+        {
+            "name": "Igor",
+            "email": "igorkri26@gmail.com",
+            "homepage": "https://github.com/igorkri",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"igorkri\\elfinder\\": ""}
+    },
+    "require": {
+        "yiisoft/yii2": "~2.0.13",
+        "yiisoft/yii2-jui": "*",
+        "studio-42/elfinder": "^2.1.10"
+    },
+    "extra": {
+      "asset-installer-paths": {
+        "npm-asset-library": "vendor/npm",
+        "bower-asset-library": "vendor/bower"
+      }
+    }
+}
