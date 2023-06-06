@@ -11,9 +11,8 @@
  * file that was distributed with this source code.
  */
 
-//namespace igorkri\elfinder;
+namespace igorkri\elfinder;
 
-namespace backend\controllers\cke;
 
 use Yii;
 use yii\filters\AccessControl;
@@ -72,7 +71,7 @@ class BaseController extends Controller{
 
     public function actionConnect(){
 
-        return $this->renderFile(__DIR__."/../../views/cke/base/connect.php", ['options'=>$this->getMyoptions(), 'plugin' => $this->plugin]);
+        return $this->renderFile(__DIR__."/views/connect.php", ['options'=>$this->getMyoptions(), 'plugin' => $this->plugin]);
 //		return $this->renderFile(__DIR__."/views/connect.php", ['options'=>$this->getOptions(), 'plugin' => $this->plugin]);
     }
 
@@ -145,6 +144,6 @@ class BaseController extends Controller{
 
     public function actionManager(){
 //        return $this->renderFile(__DIR__."/views/manager.php", ['options'=>$this->getManagerOptions()]);
-        return $this->renderFile(__DIR__."/../../views/cke/base/manager.php", ['options'=>$this->getManagerOptions()]);
+        return $this->renderFile(__DIR__."/views/manager.php", ['options'=>$this->getManagerOptions()]);
     }
 }

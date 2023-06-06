@@ -11,8 +11,7 @@
  * file that was distributed with this source code.
  */
 
-//namespace igorkri\elfinder;
-namespace backend\controllers\cke;
+namespace igorkri\elfinder;
 
 use igorkri\elfinder\volume\Local;
 use yii\helpers\ArrayHelper;
